@@ -58,13 +58,18 @@ npm install
 
 4. Set up environment variables
 Create a .env file in the backend/ folder with:
+
 env:
+
 PORT=5000
+
 MONGO_URI=mongodb://localhost:27017/bookstore
+
 JWT_SECRET=your_jwt_secret_key
+
 Optional: Add .env in frontend/if you're using Vite or React env variables.
 
-5. Run the app
+6. Run the app
 In two separate terminals:
 
 Backend:
