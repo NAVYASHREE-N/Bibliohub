@@ -47,6 +47,7 @@ cd Book-store-management-
 ```
 
 2. Install dependencies
+   
 Backend:
 cd backend
 npm install
@@ -65,6 +66,7 @@ Optional: Add .env in frontend/if you're using Vite or React env variables.
 
 5. Run the app
 In two separate terminals:
+
 Backend:
 cd backend
 npm run dev
