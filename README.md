@@ -44,6 +44,8 @@ A full-stack JavaScript-based web application that allows users to browse books,
 git clone https://github.com/Navya-2323/Book-store-management-.git
 cd Book-store-management-
 
+```
+
 2. Install dependencies
 Backend:
 cd backend
