@@ -65,9 +65,8 @@ npm install
 #### 3. Set up environment variables
 Create a .env file in the backend/ folder with:
 
-```
 env:
-
+```
 PORT=5000
 
 MONGO_URI=mongodb://localhost:27017/bookstore
