@@ -1,26 +1,95 @@
-# Book Store MERN stack project
+# 📚 Book Store Management System
 
-## Lessons
+A full-stack JavaScript-based web application that allows users to browse books, manage a cart, place orders, and provides admin functionality to manage inventory. Built using the MERN stack (MongoDB, Express.js, React.js, Node.js).
 
-- [x] Lesson 01: Create Node.js project from scratch
-- [x] Lesson 02: Create our first Http Route
-- [x] Lesson 03: Add MongoDB and mongoose to node js
-- [x] Lesson 04: Create Book model with mongoose
-- [x] Lesson 05: Save a new Book with mongoose
-- [x] Lesson 06: Get All Books with mongoose
-- [x] Lesson 07: Get One Book by id with mongoose
-- [x] Lesson 08: Update a Book with mongoose
-- [x] Lesson 09: Delete a book with mongoose
-- [x] Lesson 10: Refactor Node js with express router
-- [x] Lesson 11: CORS policy in Node js and Express js
-- [x] Lesson 12: Create React project, Vite, Tailwind CSS
-- [x] Lesson 13: SPA and Add react router dom
-- [x] Lesson 14: Show Books List in React
-- [x] Lesson 15: Show Book Details in React
-- [x] Lesson 16: Create Book in React
-- [x] Lesson 17: Edit Book in React
-- [x] Lesson 18: Delete Book in React
-- [x] Lesson 19: Show Books List as Card
-- [x] Lesson 20: Make Book Card a single component
-- [x] Lesson 21: Add Book Modal
-- [x] Lesson 22: Improve User Experience (UX) with beautiful alert
+---
+
+## 🔥 Features
+
+- 🧑‍💼 User Authentication (Login/Register)
+- 🛒 Shopping Cart
+- 📦 Order Checkout & History
+- 📚 Book Inventory Management (Admin)
+- 🧾 View Book Details
+- 🎨 Clean & Responsive UI
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend**: React.js, Tailwind CSS / CSS Modules
+- **Backend**: Node.js, Express.js
+- **Database**: MongoDB (Mongoose)
+- **Authentication**: JWT (JSON Web Tokens)
+- **Payment (Optional)**: Stripe Integration
+- **API Communication**: RESTful APIs using Axios or Fetch
+
+---
+
+## 🚀 Getting Started
+
+### ✅ Prerequisites
+
+- Node.js installed
+- MongoDB installed and running locally or using MongoDB Atlas
+- Git
+
+---
+
+### 📥 Installation
+
+#### 1. Clone the repository
+
+```bash
+git clone https://github.com/Navya-2323/Book-store-management-.git
+cd Book-store-management-
+
+2. Install dependencies
+Backend:
+cd backend
+npm install
+Frontend:
+cd ../frontend
+npm install
+
+3. Set up environment variables
+Create a .env file in the backend/ folder with:
+env:
+PORT=5000
+MONGO_URI=mongodb://localhost:27017/bookstore
+JWT_SECRET=your_jwt_secret_key
+Optional: Add .env in frontend/ if you're using Vite or React env variables.
+
+4. Run the app
+In two separate terminals:
+Backend:
+cd backend
+npm run dev
+Frontend:
+cd frontend
+npm start
+Open your browser at: http://localhost:3000
+
+🧪 Usage
+Register or Login as a user.
+Browse available books.
+Add books to cart.
+Proceed to checkout.
+As admin, manage books (Add/Edit/Delete).
+
+🗂️ Folder Structure
+📦 Book-store-management-
+├── 📁 backend
+│   ├── 📁 controllers
+│   ├── 📁 models
+│   ├── 📁 routes
+│   ├── 📁 middleware
+│   ├── index.js
+│   └── .env
+├── 📁 frontend
+│   ├── 📁 src
+│   │   ├── 📁 components
+│   │   ├── 📁 pages
+│   │   ├── App.js
+│   │   └── index.js
+├── README.md
