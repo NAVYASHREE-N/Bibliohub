@@ -74,6 +74,7 @@ npm run dev
 Frontend:
 cd frontend
 npm start
+
 Open your browser at: http://localhost:3000
 
 ### 🧪 Usage
