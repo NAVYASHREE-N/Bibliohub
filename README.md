@@ -47,18 +47,25 @@ cd Book-store-management-
 ```
 
 #### 2. Install dependencies
-   
+
+```   
 Backend:
 cd backend
 npm install
 
+```
+
+```
 Frontend:
 cd ../frontend
 npm install
 
+```
+
 #### 3. Set up environment variables
 Create a .env file in the backend/ folder with:
 
+```
 env:
 
 PORT=5000
@@ -68,20 +75,27 @@ MONGO_URI=mongodb://localhost:27017/bookstore
 JWT_SECRET=your_jwt_secret_key
 
 Optional: Add .env in frontend/if you're using Vite or React env variables.
+```
 
 #### 4. Run the app
 In two separate terminals:
 
+```
 Backend:
 cd backend
 npm run dev
 
+```
+
+```
 Frontend:
 cd frontend
 npm start
 
+```
+```
 Open your browser at: http://localhost:3000
-
+```
 ### 🧪 Usage
 Register or Login as a user.
 
