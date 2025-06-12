@@ -46,7 +46,7 @@ cd Book-store-management-
 
 ```
 
-2. Install dependencies
+#### 2. Install dependencies
    
 Backend:
 cd backend
@@ -56,7 +56,7 @@ Frontend:
 cd ../frontend
 npm install
 
-4. Set up environment variables
+#### 3. Set up environment variables
 Create a .env file in the backend/ folder with:
 
 env:
@@ -69,7 +69,7 @@ JWT_SECRET=your_jwt_secret_key
 
 Optional: Add .env in frontend/if you're using Vite or React env variables.
 
-6. Run the app
+#### 4. Run the app
 In two separate terminals:
 
 Backend:
