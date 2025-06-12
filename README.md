@@ -79,13 +79,17 @@ Open your browser at: http://localhost:3000
 
 ### 🧪 Usage
 Register or Login as a user.
+
 Browse available books.
+
 Add books to cart.
+
 Proceed to checkout.
+
 As admin, manage books (Add/Edit/Delete).
 
 ### 🗂️ Folder Structure
-
+```
 📦 Book-store-management-
 ├── 📁 backend
 │   ├── 📁 controllers
@@ -101,3 +105,4 @@ As admin, manage books (Add/Edit/Delete).
 │   │   ├── App.js
 │   │   └── index.js
 ├── README.md
+```
