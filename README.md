@@ -1,4 +1,4 @@
-# 📚 Book Store Management System
+# 📚 E-Book Hub
 
 A full-stack JavaScript-based web application that allows users to browse books, manage a cart, place orders, and provides admin functionality to manage inventory. Built using the MERN stack (MongoDB, Express.js, React.js, Node.js).
 
