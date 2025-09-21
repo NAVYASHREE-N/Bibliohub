@@ -67,17 +67,17 @@ Open **two terminals**:
 
 **Backend**
 ```bash
- backend
+ 
 npm run dev
 ```
 
 **Frontend**
 ```bash
- frontend
+ 
 npm run client
 ```
 
-Visit 👉 (http://localhost:5173)[http://localhost:5173]
+Visit 👉 http://localhost:5173
  (Vite default port) to access the frontend.
 
 ---
