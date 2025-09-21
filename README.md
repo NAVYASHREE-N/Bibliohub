@@ -35,110 +35,81 @@ Built using the **MERN** stack (MongoDB, Express.js, React.js, Node.js).
 
 ### 📥 Installation
 
-1. **Clone the repository**
+#### 1️⃣ Clone the repository
+```bash
+git clone https://github.com/<your-github-username>/BiblioHub.git
+cd BiblioHub
+```
 
-   git clone https://github.com/NAVYASHREE-N/BiblioHub.git
-   cd BiblioHub
-   
-Install dependencies
-
-Backend
-
+#### 2️⃣ Install dependencies
+**Backend**
+```bash
 cd backend
 npm install
+```
 
-Frontend
-
+**Frontend**
+```bash
 cd ../frontend
 npm install
+```
 
-Set up environment variables
-
-Create a .env file inside the backend/ folder:
-
+#### 3️⃣ Set up environment variables
+Create a **.env** file inside the `backend/` folder:
+```bash
 PORT=5000
 MONGO_URI=mongodb://localhost:27017/bibliohub
 JWT_SECRET=your_jwt_secret_key
-If using Vite or React env variables for frontend, create a .env inside frontend/ as needed.
+```
 
-Run the app
+*(Optional)* Add `.env` in `frontend/` if using Vite or React environment variables.
 
-Open two terminals:
+#### 4️⃣ Run the app
+Open **two terminals**:
 
-Backend
-
+**Backend**
+```bash
 cd backend
 npm run dev
+```
 
-Frontend
-
+**Frontend**
+```bash
 cd frontend
-npm run dev   # or npm start if CRA
-Visit the frontend at http://localhost:5173 (Vite default).
+npm start
+```
 
-🧪 Usage
-Register or Login as a user
+Now visit 👉 [http://localhost:3000](http://localhost:3000)
 
-Browse available books
+---
 
-Add books to cart
+## 🧪 Usage
+1. Register or Login as a user.  
+2. Browse available books.  
+3. Add books to cart.  
+4. Proceed to checkout.  
+5. Admins can manage books (Add / Edit / Delete).  
 
-Proceed to checkout
+---
 
-As an admin, manage books (Add / Edit / Delete)
+## 🗂️ Folder Structure
+```plaintext
+📦 BiblioHub
+├── 📁 backend
+│   ├── 📁 controllers
+│   ├── 📁 models
+│   ├── 📁 routes
+│   ├── 📁 middleware
+│   ├── index.js
+│   └── .env
+├── 📁 frontend
+│   ├── 📁 public
+│   ├── 📁 src
+│   │   ├── 📁 components
+│   │   ├── 📁 pages
+│   │   ├── App.js
+│   │   └── index.js
+└── README.md
+```
 
-
-🗂️ Folder Structure
-BiblioHub/
-├── backend/                 # Node.js + Express server
-│   ├── config/              # Database & server config
-│   │   └── db.js
-│   ├── controllers/         # Route controllers (book, user, order)
-│   │   ├── authController.js
-│   │   ├── bookController.js
-│   │   └── orderController.js
-│   ├── middleware/          # JWT auth, error handling
-│   │   ├── authMiddleware.js
-│   │   └── errorHandler.js
-│   ├── models/              # Mongoose schemas
-│   │   ├── Book.js
-│   │   ├── Order.js
-│   │   └── User.js
-│   ├── routes/              # API endpoints
-│   │   ├── authRoutes.js
-│   │   ├── bookRoutes.js
-│   │   └── orderRoutes.js
-│   ├── utils/               # Helper utilities
-│   │   └── generateToken.js
-│   ├── .env                 # Environment variables (ignored in git)
-│   ├── index.js             # Server entry point
-│   ├── package.json
-│   └── README.md            # (optional backend-specific README)
-
-├── frontend/                # React + Vite client
-│   ├── public/              # Static files, favicon, etc.
-│   │   └── vite.svg
-│   ├── src/
-│   │   ├── assets/          # Images, fonts, global styles
-│   │   ├── components/      # Reusable UI components
-│   │   │   ├── Header.jsx
-│   │   │   ├── Footer.jsx
-│   │   │   └── ProtectedRoute.jsx
-│   │   ├── pages/           # Page-level components
-│   │   │   ├── Home.jsx
-│   │   │   ├── Login.jsx
-│   │   │   ├── Signup.jsx
-│   │   │   ├── BookList.jsx
-│   │   │   ├── Checkout.jsx
-│   │   │   └── OrderHistory.jsx
-│   │   ├── App.jsx          # App entry component
-│   │   └── main.jsx         # Vite entry point
-│   ├── index.html
-│   ├── package.json
-│   ├── tailwind.config.js   # Tailwind setup
-│   ├── vite.config.js
-│   └── README.md            # (optional frontend-specific README)
-
-├── .gitignore               # Common ignores (node_modules, dist, .env, etc.)
-├── package.json             # Root-level scripts if you keep one
-└── README.md                # Main project README
+---
