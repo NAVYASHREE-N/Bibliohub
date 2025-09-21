@@ -42,17 +42,14 @@ cd BiblioHub
 ```
 
 #### 2️⃣ Install dependencies
-**Backend**
+**Backend And Frontend**
 ```bash
-cd backend
 npm install
+
+//This will install both backend and frontend dependencies, assuming your package.json includes the necessary packages.
 ```
 
-**Frontend**
-```bash
-cd ../frontend
-npm install
-```
+
 
 #### 3️⃣ Set up environment variables
 Create a **.env** file inside the `backend/` folder:
@@ -62,24 +59,26 @@ MONGO_URI=mongodb://localhost:27017/bibliohub
 JWT_SECRET=your_jwt_secret_key
 ```
 
-*(Optional)* Add `.env` in `frontend/` if using Vite or React environment variables.
+*(Optional)* Add `.env` in `frontend/` if using Vite or React environment variables
+VITE_API_URL=http://localhost:5000.
 
 #### 4️⃣ Run the app
 Open **two terminals**:
 
 **Backend**
 ```bash
-cd backend
+ backend
 npm run dev
 ```
 
 **Frontend**
 ```bash
-cd frontend
-npm start
+ frontend
+npm run client
 ```
 
-Now visit 👉 [http://localhost:3000](http://localhost:3000)
+Visit 👉 (http://localhost:5173)[http://localhost:5173]
+ (Vite default port) to access the frontend.
 
 ---
 
