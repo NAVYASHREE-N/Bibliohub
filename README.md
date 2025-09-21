@@ -1,126 +1,114 @@
-# 📚 E-Book Hub
-
-A full-stack JavaScript-based web application that allows users to browse books, manage a cart, place orders, and provides admin functionality to manage inventory. Built using the MERN stack (MongoDB, Express.js, React.js, Node.js).
+# 📚 BiblioHub
+A full-stack JavaScript web application that allows users to browse books, manage a cart, place orders, and provides admin functionality to manage inventory.  
+Built using the **MERN** stack (MongoDB, Express.js, React.js, Node.js).
 
 ---
 
 ## 🔥 Features
-
-- 🧑‍💼 User Authentication (Login/Register)
-- 🛒 Shopping Cart
-- 📦 Order Checkout & History
-- 📚 Book Inventory Management (Admin)
-- 🧾 View Book Details
-- 🎨 Clean & Responsive UI
+- 🧑‍💼 **User Authentication** (Login / Register)
+- 🛒 **Shopping Cart**
+- 📦 **Order Checkout & History**
+- 📚 **Book Inventory Management (Admin)**
+- 🧾 **View Book Details**
+- 🎨 **Clean & Responsive UI**
 
 ---
 
 ## 🛠️ Tech Stack
-
-- **Frontend**: React.js, Tailwind CSS / CSS Modules
-- **Backend**: Node.js, Express.js
-- **Database**: MongoDB (Mongoose)
-- **Authentication**: JWT (JSON Web Tokens)
-- **Payment (Optional)**: Stripe Integration
-- **API Communication**: RESTful APIs using Axios or Fetch
+| Layer      | Technology                          |
+|------------|--------------------------------------|
+| Frontend   | React.js, Tailwind CSS / CSS Modules |
+| Backend    | Node.js, Express.js                  |
+| Database   | MongoDB (Mongoose)                   |
+| Auth       | JWT (JSON Web Tokens)                |
+| API Calls  | RESTful APIs using Axios / Fetch     |
+| Optional   | Stripe (Payment Integration)         |
 
 ---
 
 ## 🚀 Getting Started
 
 ### ✅ Prerequisites
-
-- Node.js installed
-- MongoDB installed and running locally or using MongoDB Atlas
-- Git
-
----
+- [Node.js](https://nodejs.org/) installed
+- [MongoDB](https://www.mongodb.com/) running locally or Atlas account
+- [Git](https://git-scm.com/) installed
 
 ### 📥 Installation
 
-#### 1. Clone the repository
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/NAVYASHREE-N/BiblioHub.git
+   cd BiblioHub
+Install dependencies
 
-```bash
-git clone https://github.com/Navya-2323/Book-store-management-.git
-cd Book-store-management-
+Backend
 
-```
-
-#### 2. Install dependencies
-
-```   
-Backend:
+bash
+Copy code
 cd backend
 npm install
+Frontend
 
-```
-
-```
-Frontend:
+bash
+Copy code
 cd ../frontend
 npm install
+Set up environment variables
 
-```
+Create a .env file inside the backend/ folder:
 
-#### 3. Set up environment variables
-Create a .env file in the backend/ folder with:
-
-env:
-```
+ini
+Copy code
 PORT=5000
-
-MONGO_URI=mongodb://localhost:27017/bookstore
-
+MONGO_URI=mongodb://localhost:27017/bibliohub
 JWT_SECRET=your_jwt_secret_key
+If using Vite or React env variables for frontend, create a .env inside frontend/ as needed.
 
-Optional: Add .env in frontend/if you're using Vite or React env variables.
-```
+Run the app
 
-#### 4. Run the app
-In two separate terminals:
+Open two terminals:
 
-```
-Backend:
+Backend
+
+bash
+Copy code
 cd backend
 npm run dev
+Frontend
 
-```
-
-```
-Frontend:
+bash
+Copy code
 cd frontend
-npm start
+npm run dev   # or npm start if CRA
+Visit the frontend at http://localhost:5173 (Vite default).
 
-```
-```
-Open your browser at: http://localhost:3000
-```
-### 🧪 Usage
-Register or Login as a user.
+🧪 Usage
+Register or Login as a user
 
-Browse available books.
+Browse available books
 
-Add books to cart.
+Add books to cart
 
-Proceed to checkout.
+Proceed to checkout
 
-As admin, manage books (Add/Edit/Delete).
+As an admin, manage books (Add / Edit / Delete)
 
-### 🗂️ Folder Structure
-```
-📦 Book-store-management-
-├── 📁 backend
-│   ├── 📁 controllers
-│   ├── 📁 models
-│   ├── 📁 routes
-│   ├── 📁 middleware
+🗂️ Folder Structure
+css
+Copy code
+BiblioHub
+├── backend
+│   ├── controllers
+│   ├── models
+│   ├── routes
+│   ├── middleware
 │   ├── index.js
 │   └── .env
-├── 📁 frontend
-│   ├── 📁 src
-│   │   ├── 📁 components
-│   │   ├── 📁 pages
-│   │   ├── App.js
-│   │   └── index.js
+├── frontend
+│   ├── src
+│   │   ├── components
+│   │   ├── pages
+│   │   ├── App.jsx
+│   │   └── main.jsx
 ├── README.md
-```
+└── package.json
