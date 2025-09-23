@@ -24,7 +24,7 @@ const fetchBooks = async () => {
     const token = localStorage.getItem("token");
     if (!token) return alert("Please login");
 
-    const res = await axios.get("http://localhost:5000/books", {
+    const res = await axios.get("http://localhost:5000/api/books", {
       headers: { Authorization: `Bearer ${token}` }
     });
 
@@ -52,7 +52,7 @@ const fetchBooks = async () => {
   const deleteBook = async (id) => {
     const token = localStorage.getItem("token");
     try {
-      await axios.delete(`http://localhost:5000/books/${id}`, {
+      await axios.delete(`http://localhost:5000/api/books/${id}`, {
         headers: { Authorization: `Bearer ${token}` }
       });
       alert("Book deleted successfully.");

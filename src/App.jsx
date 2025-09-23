@@ -6,7 +6,7 @@ import Home from "./pages/Home";
 import CreateBook from "./pages/CreateBook";
 import EditBook from "./pages/EditBook";
 import Login from "./pages/Login";
-import Signup from "./pages/signup"; // ✅ Use only one of Register/Signup
+import Signup from "./pages/signup"; // TODO: consolidate with Register.jsx if duplicated
 import ShowBook from "./pages/ShowBook";
 import CartPage from "./pages/CartPage";
 import OrdersPage from "./pages/OrdersPage";
@@ -81,14 +81,14 @@ const App = () => {
             </ProtectedRoute>
           }
         />
-        {/* <Route
+        <Route
           path="/checkout"
           element={
             <ProtectedRoute>
               <Checkout />
             </ProtectedRoute>
           }
-        /> */}
+        />
         <Route
           path="/order-history"
           element={

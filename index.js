@@ -13,6 +13,7 @@ import reviewRoutes from "./routes/reviewRoutes.js";
 import genreRoutes from "./routes/genreRoutes.js";
 import userRoutes from "./routes/userRoutes.js";
 import authRoutes from "./routes/authRoutes.js";
+import paymentRoutes from "./routes/paymentRoutes.js";
 
 // Middleware
 import authMiddleware from "./middleware/authMiddleware.js";
@@ -27,12 +28,13 @@ app.use(express.json());
 app.use("/api/auth", authRoutes);
 app.use("/api/users", userRoutes);
 
-// Protected Routes
+// Protected Routes (standardized under /api)
 app.use("/api/cart", authMiddleware, cartRoutes);
-app.use("/orders", authMiddleware, orderRoutes);
-app.use("/reviews", authMiddleware, reviewRoutes);
-app.use("/genres", authMiddleware, genreRoutes);
-app.use("/books", authMiddleware, bookRoutes);
+app.use("/api/orders", authMiddleware, orderRoutes);
+app.use("/api/reviews", authMiddleware, reviewRoutes);
+app.use("/api/genres", authMiddleware, genreRoutes);
+app.use("/api/books", authMiddleware, bookRoutes);
+app.use("/api/payments", paymentRoutes);
 
 // Connect to MongoDB Atlas
 connectDB();
